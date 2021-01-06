@@ -1,0 +1,447 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+	padding: 0;
+	margin: 0;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+@font-face {
+	font-family: 'AkrobatBold'; 
+	src: url(../fonts/Acrobat/Akrobat-Bold.woff); 
+}
+@font-face {
+	font-family: 'AdobeCleanLight'; 
+	src: url(../fonts/AdobeClean/AdobeClean-Light.woff); 
+}
+@font-face {
+    font-family: 'AdobeCleanRegular';
+	src: url(../fonts/AdobeClean/AdobeClean-Regular.woff); 
+  }
+@font-face {
+	font-family: 'ComicSansMSBold'; 
+	src: url(../fonts/ComicSans/ComicSansMS-Bold.woff); 
+}
+@font-face {
+	font-family: 'ComicSansMS'; 
+	src: url(../fonts/ComicSans/ComicSansMS.woff); 
+}
+@font-face {
+	font-family: 'HoltzbergRegular'; 
+	src: url(../fonts/Holtzberg/Holtzberg-Regular.woff); 
+}
+.container{
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+button{
+	border: none;
+	background: none;
+	outline: none;
+	margin: 0;
+	cursor: pointer;
+}
+P{
+	margin: 0;
+}
+h1,h2,h3,h4{
+	margin: 0;
+}
+.header{
+	background: #091017;
+}
+.header-inner{
+	height: 59px;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	display: block;
+	width: 100px;
+	height: 25px;
+	margin-right: 52px;
+}
+.menu{
+	font-family: 'AdobeCleanRegular';
+	text-transform: uppercase;
+	font-size: 14px;
+	align-items: center;
+	display: flex;
+}
+.menu-list{
+	display: flex;
+	align-items: center;
+}
+.menu-list li{
+	margin-right: 52px;
+}
+.menu-list li a{
+	transition: 0.2s;
+	padding-bottom: 20px;
+	border-bottom: 3px solid transparent;
+}
+.menu-list li a:hover{
+	border-bottom: 3px solid #f6dc02;
+	color: #f6dc02;
+}
+.navigation-user i{
+	color: #fff;
+}
+.navigation-user{
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+}
+.navigation-user__mobile{
+	display: none;
+}
+.user-group{
+	display: flex;
+}
+.search, .locate{
+	margin-right: 25px;
+}
+.login i{
+	width: 61px;
+	margin-left: 6px;
+}
+.load a{
+	background: #f6dc02;
+	width: 199px;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 21px 0;
+}
+.button{
+	display: none;
+}
+.offer{
+	background-image: url(https://img5.goodfon.ru/original/1920x1080/0/c8/fortnite-kylo-ren-lightsaber-zvezdnye-voiny.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #030b12;
+	/* background: #030b12; */
+	/* padding: 39px 0 20px 0; */
+	padding: 213px 0 184px;
+	position: relative;
+}
+.offer-inner{
+	display: flex;
+	align-items: center;
+}
+.offer-info{
+	color: #fff;
+	margin-right: 272px;
+}
+.offer-info h1{
+	font-size: 120px;
+	font-family: 'HoltzbergRegular';
+	margin-bottom: 35px;
+}
+.offer-info p{
+	font-size: 24px;
+	font-family: 'AdobeCleanLight';
+	color: #cac9c9;
+	margin-bottom: 97px;
+	max-width: 532px;
+	line-height: normal;
+}
+.link{
+	border: 2px solid transparent;
+	transition: 0.2s;
+	font-family: 'ComicSansMSBold';
+	display: inline-block;
+}
+.offer-link{
+	border: 2px solid #f6dc02;
+	padding: 18px 57px;
+	font-size: 24px;
+	background: unset;
+}
+.offer-link:hover{
+	color: #3e3d3d;
+	background: #f6dc02;
+}
+.video-information{
+	margin-bottom: 80px;
+}
+.battle-sets__wrap{
+	display: flex;
+	margin-top: -70px;
+	justify-content: center;
+	font-family: 'AkrobatBold'; 
+	color: #3e3d3d;
+	margin-bottom: 90px;
+	position: relative;
+}
+.batle-sets__item{
+	box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.2);
+	text-transform: uppercase;
+	width: 357px;
+	height: 121px;
+	padding: 25px;
+}
+.item-free{
+	position: relative;
+	background: #f6dc02;
+}
+.item-last{
+	background: #aba7b1;
+}
+.item-end{
+	background: #0078ff;
+}
+.sets-heading{
+	display: flex;
+	justify-content: space-between;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+.sets-title{
+	font-size: 15px;
+	font-family: 'ComicSansMS'; 
+}
+.sets-price{
+	font-size: 18px;
+	color: #fff;
+}
+.video-information__top{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.video-information-wrap h1{
+	font-size: 60px;
+	color: #0078ff;
+	font-family: 'ComicSansMSBold'; 
+	margin-bottom: 60px;
+}
+.video-information-wrap p{
+	line-height: normal;
+	font-size: 21px;
+	color: #3e3d3d;
+	font-family: 'AdobeCleanLight'; 
+	margin-bottom: 40px;
+	max-width: 751px;
+}
+.video-link{
+	color: #3e3d3d;
+	padding: 32px 91px;
+	font-size: 20px;
+	background: #f6dc02;
+	margin-bottom: 72px;
+}
+.video-link:hover{
+	border: 2px solid #f6dc02;
+	background: none
+}
+/* Стили слайдера начало */
+.slider-video__wrap{
+	width: 100%;
+}
+.slider-list{
+	position: relative;
+}
+.video-slider .slick-arrow{
+	margin: -30px 10px 0 10px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+.video-slider .slick-prev {
+    left: 0;
+    background: url(../img/left-arrow.svg) 0 0 / 100% no-repeat;
+}
+.video-slider .slick-next {
+    left: 0;
+    background: url(../img/right-arrow.svg) 0 0 / 100% no-repeat;
+}
+.video-slider .slick-dots button{
+	bottom: 15px;
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    background: rgba(0,120,255,0.55);
+    border-radius: 50%;
+}
+.video-slider .slick-dots li.slick-active button{
+    background: #0078ff;
+}
+.slick-list{
+	margin-bottom: 26px;
+}
+/* Стили слайдера конец */
+.more-information{
+    position: relative;
+	padding: 50px 0;
+	background-color: #030b12;
+	background-image: url(https://img5.goodfon.ru/original/1920x1080/f/3c/fortnite-mashina-trava.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 213px 0 184px;
+}
+.bg-img{
+    position: absolute;
+    background: no-repeat top;
+    background-size: cover;
+    overflow: hidden;
+}
+.more-information__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.more-information__text{
+	text-transform: uppercase;
+	color: #fff;
+	max-width: 503px;
+	margin: 0 auto;
+}
+.more-information__text h1{
+	font-size: 72px;
+	font-family: 'AkrobatBold'; 
+	margin-bottom: 20px;
+}
+.more-information__text p{
+	font-size: 18px;
+	font-family: 'ComicSansMS';
+	line-height: normal;
+	margin-bottom: 51px;
+}
+.link-more{
+	color: #5d5757;
+	background: #f6dc02;
+	padding: 19px 42px;
+}
+.link-more:hover{
+	background: none;
+	border: 2px solid #f6dc02;
+	color: #fff;
+}
+.footer{
+	padding: 36px 0 115px 0;
+	background:  #383838;
+}
+.footer-wrap{
+	flex-wrap: wrap;
+	display: flex;
+}
+.footer-wrap-between{
+	justify-content: space-between;
+}
+.footer-wrap:first-child{
+	margin-bottom: 94px;
+}
+.footer-wrap + .footer-wrap{
+	padding-bottom: 26px;
+	border-bottom: 1px solid rgba(232,232,232,0.12);
+	margin-bottom: 41px;
+}
+.social-list{
+	align-items: center;
+	display: flex;
+}
+.social-list li{
+	margin-right: 10px;
+}
+.social-list li a{
+	transition: 0.2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	background: #0078ff;
+	color: #fff;
+	border-radius: 4px;
+}
+.footer-button{
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	transition: 0.2s;
+}
+.footer-button:hover{
+	background: #fff;
+	color: #000;
+}
+.footer-link__list{
+	margin-right: 32px;
+}
+.footer-link__list li{
+	margin-bottom: 10px;
+}
+.footer-link__list li a{
+	transition: 0.2s;
+	font-size: 15px;
+	font-family: 'AdobeCleanRegular';
+}
+.footer-link__list a:hover,.conditions-list a:hover{
+	color: #f6dc02;
+} 
+.age-limit{
+	margin-left: auto;
+	width: 67px;
+	height: 67px;
+}
+.footer-description{
+	margin-bottom: 50px;
+	max-width: 750px;
+}
+.footer-description p{
+	color: #fff;
+	line-height: normal;
+	font-size: 14px;
+	font-family: 'AdobeCleanLight'; 
+}
+.conditions-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.conditions-list li:first-child{
+	margin-right: 70px;
+}
+.conditions-list li a{
+	font-size: 14px;
+	font-family: 'AdobeCleanLight'; 
+}
+.logo-partners{
+	display: flex;
+	align-items: center;
+}
+.logo-partners img{
+	width: 24px;
+	margin-left: 15px;
+}
